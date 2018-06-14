@@ -1,5 +1,6 @@
 find_package(Protobuf REQUIRED)
 PROTOBUF_GENERATE_CPP(PUBBYDB_INTERNAL_PROTO_SRC PUBBYDB_INTERNAL_PROTO_HEADER
+        database.proto
         permission.proto
         user.proto)
 set(PUBBYDB_INTERNAL_PROTO_LIBRARY pubbydb_internal_proto CACHE STRING "Internal Protobuf")

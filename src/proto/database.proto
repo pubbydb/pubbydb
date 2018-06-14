@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package pubbydb_internal_proto;
+import "proto/record.proto";
+import "pubbydb/src/proto/user.proto";
+
+message Server {
+    repeated Database databases = 1;
+}
+
+message Database {
+    //string file_path = 1;
+    reserved 1;
+    repeated User users = 2;
+    repeated Collection collections = 3;
+}
+
+message Collection {
+    string name = 1;
+    repeated Record records = 2;
+}
