@@ -4,10 +4,7 @@
 //
 // Use of this source code is governed by an
 // MIT-style license that can be found in the LICENSE file.
-#include <iostream>
-#include <pubbydb>
+#ifndef PUBBYDB_MONO_REPO_DAEMON_HPP
+#define PUBBYDB_MONO_REPO_DAEMON_HPP
 
-int main(int argc, const char **argv) {
-    std::cout << pubbydb::GetDefaultConfigurationFile() << std::endl;
-    return 0;
-}
+#endif //PUBBYDB_MONO_REPO_DAEMON_HPP

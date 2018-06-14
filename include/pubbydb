@@ -1,3 +1,4 @@
+// -*- C++ -*-
 // Copyright (c) 2018, Tobechukwu Osakwe.
 //
 // All rights reserved.
@@ -18,6 +19,14 @@ namespace pubbydb
         int32_t tcp_port;
         int32_t http_port;
     } Configuration;
+
+    std::string GetDefaultConfigurationDirectory();
+
+    std::string GetDefaultConfigurationFile();
+
+    Configuration GetDefaultConfiguration();
+
+    std::string GetPathSeparator();
 }
 
 #endif //PUBBYDB_MONO_REPO_PUBBYDB_HPP
