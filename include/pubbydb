@@ -18,6 +18,7 @@ namespace pubbydb
         std::string server_file;
         int32_t tcp_port;
         int32_t http_port;
+        bool verbose;
     } Configuration;
 
     std::string GetDefaultConfigurationDirectory();

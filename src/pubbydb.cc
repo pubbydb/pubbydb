@@ -33,5 +33,6 @@ pubbydb::Configuration pubbydb::GetDefaultConfiguration() {
     configuration.server_file = pubbydb::GetDefaultConfigurationFile();
     configuration.tcp_port = 9045;
     configuration.http_port = 9046;
+    configuration.verbose = false;
     return configuration;
 }
