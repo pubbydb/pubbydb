@@ -7,4 +7,17 @@
 #ifndef PUBBYDB_MONO_REPO_PUBBYDB_HPP
 #define PUBBYDB_MONO_REPO_PUBBYDB_HPP
 
+#include <cstdint>
+#include <string>
+
+namespace pubbydb
+{
+    typedef struct
+    {
+        std::string server_file;
+        int32_t tcp_port;
+        int32_t http_port;
+    } Configuration;
+}
+
 #endif //PUBBYDB_MONO_REPO_PUBBYDB_HPP
