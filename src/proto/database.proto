@@ -1,8 +1,8 @@
 syntax = "proto3";
 
 package pubbydb_internal_proto;
-import "proto/record.proto";
-import "pubbydb/src/proto/user.proto";
+import "record.proto";
+import "user.proto";
 
 message Server {
     repeated Database databases = 1;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package pubbydb_internal_proto;
-import "pubbydb/src/proto/permission.proto";
+import "permission.proto";
 
 message User {
     uint64 id = 1;
