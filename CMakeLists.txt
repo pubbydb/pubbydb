@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.0)
+project(pubbydb)
+set(CMAKE_CXX_STANDARD 11)
+include(FindProtobuf)
+find_package(Protobuf REQUIRED)
+PROTOBUF_GENERATE_CPP(PUBBY_PROTO_SRC PUBBY_PROTO_HEADER
+        request.proto)
+set(PUBBY_PROTO_LIBRARY pubby_proto CACHE STRING "The name of the PubbyDB Protobuf library.")
+add_library(${PUBBY_PROTO_LIBRARY} STATIC ${PUBBY_PROTO_HEADER} ${PUBBY_PROTO_SRC})
+target_include_directories(${PUBBY_PROTO_LIBRARY} PUBLIC ${PROTOBUF_INCLUDE_DIR})
