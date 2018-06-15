@@ -10,24 +10,8 @@
 
 #include <cstdint>
 #include <string>
-
-namespace pubbydb
-{
-    typedef struct
-    {
-        std::string server_file;
-        int32_t tcp_port;
-        int32_t http_port;
-        bool verbose;
-    } Configuration;
-
-    std::string GetDefaultConfigurationDirectory();
-
-    std::string GetDefaultConfigurationFile();
-
-    Configuration GetDefaultConfiguration();
-
-    std::string GetPathSeparator();
-}
+#include "_pubbydb/configuration.hpp"
+#include "_pubbydb/net.hpp"
+#include "_pubbydb/pubby.hpp"
 
 #endif //PUBBYDB_MONO_REPO_PUBBYDB_HPP

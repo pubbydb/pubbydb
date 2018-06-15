@@ -1,4 +1,8 @@
-set(PUBBY_INCLUDE_HEADERS ${CMAKE_CURRENT_LIST_DIR}/pubbydb)
+set(PUBBY_INCLUDE_HEADERS
+        ${CMAKE_CURRENT_LIST_DIR}/pubbydb
+        ${CMAKE_CURRENT_LIST_DIR}/_pubbydb/configuration.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/_pubbydb/net.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/_pubbydb/pubby.hpp)
 message(STATUS ${PUBBYDB_INCLUDE_HEADERS})
 set(PUBBYDB_INCLUDE_HEADERS ${PUBBY_INCLUDE_HEADERS} CACHE STRING "The PubbyDB headers.")
 set(PUBBYDB_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR} CACHE STRING "The directory containing the PubbyDB headers.")
