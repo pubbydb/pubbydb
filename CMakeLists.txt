@@ -1,8 +1,0 @@
-cmake_minimum_required(VERSION 3.0)
-project(pubbydb CXX)
-set(CMAKE_CXX_STANDARD 11)
-set(PUBBYDB_DAEMON pubbyd CACHE STRING "The name of the pubbyd executable.")
-set(PUBBYDB_LIBRARY pubbydb CACHE STRING "The name of the PubbyDB library.")
-add_subdirectory(external)
-add_subdirectory(include)
-add_subdirectory(src)
